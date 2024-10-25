@@ -7,8 +7,8 @@ import stopwords
 import evaluate
 import keywords
 
-# Path to the directory containing the files to be analyzed
-input_directory_path = "C:/Users/andre/Desktop/Andrea/Università/Magistrale/1° anno/Erasmus/PAD/2nd PROJECT/corpus2mw"
+# Path to the directory data/ containing the corpus of the files to be analyzed
+input_directory_path = "C:/Users/andre/Documents/GitHub/Text-mining-project-PAD/data/corpus2mw"
 
 # Special characters
 special_chars = r",;:!<>()[]&?=+\"'./\\"            
