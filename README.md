@@ -6,6 +6,6 @@ To get started, clone the repository by running `git clone https://github.com/yo
 
 The project is structured as follows: The `data/` directory contains the dataset(s) used for analysis; `src/` contains the core codebase for text preprocessing, extraction, and analysis; and `results/` stores results, extracted expressions, and keywords.
 
-To run the project, execute the scripts in the `src/` folder for different stages of analysis. First, run `python src/preprocessing.py` to clean and prepare the data. Then, execute `python src/extraction.py` to perform expression extraction. Finally, run `python src/keyword_analysis.py` to carry out keyword analysis. The results will be saved in the `results/` folder, including extracted expressions, keywords, and any generated reports or visualizations.
+To run the project, execute the scripts in the `src/` folder for different stages of analysis. First, run `python src/preprocessing.py` to clean and prepare the data. Then, execute `python src/extraction.py` to perform expression extraction. Finally, run `python src/keyword_analysis.py` to carry out keyword analysis. The results will be printed on the terminal.
 
 Contributions are welcome! Please fork the repository and create a pull request with your changes. For major changes, open an issue to discuss what you would like to change. This project is licensed under the MIT License, and you can find the details in the `LICENSE` file.
