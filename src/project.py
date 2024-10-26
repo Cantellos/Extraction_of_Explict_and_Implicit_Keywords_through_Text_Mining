@@ -6,9 +6,16 @@ import metrics
 import stopwords
 import evaluate
 import keywords
+from pathlib import Path
 
-# Path to the directory data/ containing the corpus of the files to be analyzed
-input_directory_path = "C:/Users/andre/Documents/GitHub/Text-mining-project-PAD/data/corpus2mw"
+# Define the base directory (project root)
+base_dir = Path(__file__).resolve().parent.parent  # Goes up two levels from src/ to space/
+
+# Define the relative path to the data file containing the corpus of the files to be analyzed
+data_file_path = base_dir / 'data' / 'corpus2mw'
+
+# Convert the path to a string with forward slashes
+input_directory_path = data_file_path.as_posix()
 
 # Special characters
 special_chars = r",;:!<>()[]&?=+\"'./\\"            
