@@ -1,11 +1,83 @@
-# Text Mining Project  
-Welcome to my Text Mining Project! This repository contains code and resources for analyzing large-scale text data to extract relevant expressions, explicit keywords, and implicit keywords. The goal of this project is to explore and extract key insights from thousands of textual documents using Python. The project leverages various text mining techniques to preprocess and clean the text data, identify and extract relevant expressions and patterns, and detect and extract explicit and implicit keywords.
+# Extraction of Explicit and Implicit Keywords through Text Mining
 
-Before you begin, make sure you have the following installed: Python 3.7+ and the required Python libraries listed in requirements.txt.  
-To get started, clone the repository by running `git clone https://github.com/your-username/your-repo-name.git`, navigate into the project directory using cd your-repo-name and infally install the dependencies by running `pip install -r requirements.txt`.
+## Overview
 
-The project is structured as follows: The `data/` directory contains the dataset(s) used for analysis; `src/` contains the core codebase for text preprocessing, extraction, and analysis; and `results/` stores results, extracted expressions, and keywords.
+This project aims to extract both **explicit** and **implicit** keywords from textual data using text mining and natural language processing (NLP) techniques. While explicit keywords are directly mentioned in the text, implicit keywords represent underlying or contextually relevant concepts that are not overtly stated. 
 
-To run the project, execute the scripts in the `src/` folder for different stages of analysis. First, run `python src/preprocessing.py` to clean and prepare the data. Then, execute `python src/extraction.py` to perform expression extraction. Finally, run `python src/keyword_analysis.py` to carry out keyword analysis. The results will be printed on the terminal.
+The goal is to enhance keyword extraction by uncovering hidden themes and improving downstream tasks such as:
+- Information retrieval
+- Text summarization
+- Document classification
+- Topic modeling
 
-Contributions are welcome! Please fork the repository and create a pull request with your changes. For major changes, open an issue to discuss what you would like to change. This project is licensed under the MIT License, and you can find the details in the `LICENSE` file.
+## Features
+
+- Extraction of explicit keywords using standard NLP techniques
+- Identification of implicit keywords using semantic analysis
+- Preprocessing pipeline for raw textual data
+- Evaluation metrics for keyword relevance and coverage
+
+## Technologies Used
+
+- Python 3.x  
+- NLTK / spaCy  
+- Scikit-learn  
+- Gensim  
+- Word embeddings (e.g., Word2Vec, GloVe)
+
+## Project Structure
+
+```
+├── data/                   # Sample text data for testing
+├── src/                    # Source code for keyword extraction
+│   ├── preprocessing.py    # Text cleaning and preprocessing
+│   ├── explicit.py         # Explicit keyword extraction methods
+│   ├── implicit.py         # Implicit keyword extraction using semantic similarity
+│   └── utils.py            # Helper functions
+├── results/                # Output and evaluation results
+├── requirements.txt        # List of required Python packages
+└── README.md               # Project documentation
+```
+
+## Getting Started
+
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/Cantellos/Extraction_of_Explict_and_Implicit_Keywords_through_Text_Mining.git
+   cd Extraction_of_Explict_and_Implicit_Keywords_through_Text_Mining
+   ```
+
+2. **Install dependencies**  
+   It is recommended to use a virtual environment.
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run the extraction pipeline**  
+   Example:
+   ```bash
+   python src/main.py --input data/sample_text.txt --output results/keywords.json
+   ```
+
+## Example Input
+
+```text
+Artificial intelligence is transforming industries by automating complex processes and generating insights from large datasets.
+```
+
+## Example Output
+
+```json
+{
+  "explicit_keywords": ["Artificial intelligence", "industries", "automation", "datasets"],
+  "implicit_keywords": ["machine learning", "data analysis", "business intelligence"]
+}
+```
+
+## Contributions
+
+Feel free to fork the repository, open issues, or submit pull requests. Contributions are welcome!
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
